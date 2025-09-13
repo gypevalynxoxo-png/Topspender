@@ -1,26 +1,107 @@
-<form action="https://evalyn.app.n8n.cloud/webhook/topspender" method="POST">
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Information Topspender PC Form</title>
+  <style>
+    body {
+      font-family: 'Prompt', sans-serif;
+      background: #0b0f19;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      background: #1a2132;
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+    .brand {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .brand img {
+      width: 100px;
+      border-radius: 50%;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      background: #2a3248;
+      color: #fff;
+    }
+    input::placeholder {
+      color: #bbb;
+    }
+    button {
+      margin-top: 25px;
+      width: 100%;
+      padding: 15px;
+      background: #5bd482;
+      color: #000;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #42b468;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="brand">
+      <img src="brand.jpg" alt="Brand Logo" />
+    </div>
+    <h1>Personal Information Topspender PC</h1>
+    <form action="https://evalyn.app.n8n.cloud/webhook/topspender" method="POST">
   <input type="hidden" name="_redirect" value="https://gypevalynxoxo-png.github.io/topspender/thankyou.html">
-
+      
   <label>ชื่อ - นามสกุล</label>
-  <input type="text" name="fullname" placeholder="กรอกชื่อ - นามสกุล" required />
+      <input type="text" name="fullname" placeholder="กรอกชื่อ - นามสกุล" required />
 
-  <label>ชื่อเล่น</label>
-  <input type="text" name="nickname" placeholder="กรอกชื่อเล่น" />
+      <label>ชื่อเล่น</label>
+      <input type="text" name="nickname" placeholder="กรอกชื่อเล่น" />
 
-  <label>เบอร์โทรศัพท์ (ที่ติดต่อได้)</label>
-  <input type="tel" name="phone" placeholder="กรอกเบอร์โทรศัพท์" />
+      <label>เบอร์โทรศัพท์ (ที่ติดต่อได้)</label>
+      <input type="tel" name="phone" placeholder="กรอกเบอร์โทรศัพท์" />
 
-  <label>วันเกิด</label>
-  <input type="date" name="birthday" />
+      <label>วันเกิด</label>
+      <input type="date" name="birthday" />
 
-  <label>ที่อยู่ (สำหรับรับ Gift Box)</label>
-  <textarea name="address" placeholder="กรอกที่อยู่ของคุณ"></textarea>
+      <label>ที่อยู่ (สำหรับรับ Gift Box)</label>
+      <textarea name="address" placeholder="กรอกที่อยู่ของคุณ"></textarea>
 
-  <label>ข้อมูลติดต่อทาง Social Media</label>
-  <input type="text" name="social" placeholder="Facebook / IG / Line" />
+      <label>ข้อมูลติดต่อทาง Social Media</label>
+      <input type="text" name="social" placeholder="Facebook / IG / Line" />
 
-  <label>email สำหรับรับข้อมูลข่าวสาร</label>
-  <input type="email" name="email" placeholder="กรอกอีเมลของคุณ" />
+      <label>email สำหรับรับข้อมูลข่าวสาร</label>
+      <input type="email" name="email" placeholder="กรอกอีเมลของคุณ" />
 
-  <button type="submit">ส่งข้อมูล</button>
-</form>
+      <button type="submit">ส่งข้อมูล</button>
+    </form>
+  </div>
+</body>
+</html>
